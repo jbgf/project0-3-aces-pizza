@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../etc/style.css">
+    <link href="../etc/menuStyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+
+    <section id="menuTitle" class="panel">
+        <header>Our Menu</header>
+        <p>At Quay, our passion is to deliver a truly unique dining experience, one which is
+            completely removed from the everyday. Quay’s menu is a continually evolving
+            repertoire; some classics, some reworking of old favourites plus new dishes for each season.</p>
+    </section>
+
+
+<div id="select">
+    <form>Select a Food:
+        <select name="Menu" onchange="showMenu(this.value)">
+            <option value="Pizza">Pizzas</option>
+            <option value="Spaghetti">Spaghetti</option>
+            <option value="Pie">Pie</option>
+            <option value="SideOrders">Side Orders</option>
+            <option value="SpecialDinners">Special Dinners</option>
+        </select>
+    </form>
+</div>
+
+<div id="menu"></div>
+<div id="footerPic">
+        <div id="footerBottom">
+            <header>3</header>
+            <img src="../img/logoSymbol.png"></div>
+    </div>
+<script src="../javascript/jquery-1.11.3.min.js"></script>
+<script src="../javascript/Ajax.js"></script>
+<script src="../javascript/my_js.js"></script>
+</body>
+</html>

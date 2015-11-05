@@ -1,0 +1,289 @@
+:link,:visited { text-decoration:none }
+ul,ol { list-style:none }
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+{ margin:0; padding:0 }
+a img,:link img,:visited img { border:none }
+address { font-style:normal }
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Cond,serif;
+
+}
+
+header{
+    padding-top:20px;
+    font-size:2.2em;
+    letter-spacing:0.5em;
+}
+/*图片滚动栏————————————————————————————————————————*/
+div#pic-top{
+    width:100%;
+    height:460px;
+    position:fixed;
+    left:0px;
+    top:0px;
+    margin:0;
+    padding:0;
+    z-index: -1;
+}
+div#pic-top img{
+    width:100%;
+    height:auto;}
+
+/*图片滚动栏，图片重合，最后一张eq(4)在上；li：eq(0-4) */
+ul.pic-top li{
+    position:absolute;
+    list-style-type: none
+}
+/*图片滚动栏图层z-index为2、3张设为可见；*/      /*--li属于半内联，权限1000，所以无法覆盖、应在img设置display属性--*/
+#pic-top  img{display:none;}
+img#img-top2, img#img-top3{
+      display: inline;
+}
+
+.logo{
+    position: absolute;
+    top:-470px;
+    left:10px;
+
+}
+
+/*图片栏导航分页点,置于图层上方————————————————————————————————*/
+ul#nav-top{
+    margin:0 auto;
+
+    width:165px;
+    cursor:pointer;
+
+    position:relative;
+    top:-50px;
+
+
+
+    z-index: 11;
+}
+ul#nav-top>li{
+    float:left;
+    margin-right: 1em;
+    list-style-type: none;
+}
+/*图片栏导航分页点点击,hover添加的动画*/
+.hoverLiOn .myCircleUp{
+
+}
+.myCircleUp
+{  animation:transUp 0.3s forwards ease-in;}
+@keyframes transUp
+{   80%  {transform:scale(8.5,8.5)}
+    100% {  transform:scale(6,6);  } }
+
+.myCircleDown{  animation:transDown 0.3s forwards ease-out;    }
+@keyframes transDown {
+    0%{transform:scale(6,6)}
+    20%  {transform:scale(8.5,8.5)}
+    100%{transform:scale(0,0)}
+}
+
+
+
+/*主页——————————————————————————————————————————————————————*/
+div#main,div#menu{
+    position:relative;
+    top:460px;
+    margin:0px;
+    padding-top:0px;
+    width:100%;
+    height:860px;
+
+    background: white;
+    z-index:10;
+
+}
+/*主页菜单栏导航——————*/
+ul#nav{
+    list-style-type:none;
+    margin:0 auto;
+    padding:0;
+    width:550px;
+
+    position:absolute;
+    top:20px;
+    left:420px;
+
+
+}
+ul#nav>li{
+    width:20px;
+    height:30px;
+    font-family:Cond,serif;
+    font-size:1em;
+    margin-right: 7em;
+    float:left;
+
+    cursor:pointer;
+
+    letter-spacing:3px
+}
+@font-face {
+    font-family:"Cond";
+    src:url("../etc/OpenSans-CondBold.ttf")
+
+}
+ul#nav a{
+    padding:0 3em;
+    line-height:2.1em;
+    text-decoration: none;
+    color:#000;
+
+}
+
+/*鼠标悬停时的动画*/
+.onHover{
+
+    animation:transX 1s forwards;
+}
+@keyframes transX
+{
+    100% {  transform:scale(5,1);  } }
+
+.onBlur{
+    animation:transY 1s forwards;
+
+}
+@keyframes transY
+{
+    0%  {  transform:scale(5,1);  }
+    100% {  transform:scale(0.01,1);  } }
+
+.panel{
+    width:480px;
+    height:600px;
+    padding:80px;
+
+    font-size: 15px;
+    background-color: #fff;
+}
+
+#welcome{
+    width:400px;
+    height:300px;
+
+    position: relative;
+    top:150px;
+    left:200px;
+    line-height:1.3em;
+
+}
+
+#chef{
+    float:right;
+}
+
+#experience{
+    position: absolute;
+    top:830px;
+    right:150px;
+    height:800px;
+    color:white;
+    background: url("../img/background2.png");
+}
+
+#functions{
+
+    color:white;
+    width:450px;
+    height:300px;
+
+    position:relative;
+    top:1050px;
+    left:150px;
+    background: url("../img/background3.png");
+
+}
+
+#experience p,#functions p{
+    padding:0 30px 30px 0;
+    position: relative;
+    top:30px;
+    font-family:sans-serif;
+
+    line-height:1.3em;
+}
+#experience p {
+    font-size: 25px;}
+#welcome p{
+    position: relative;
+    top:60px;
+    font-family:sans-serif;
+    font-size: 15px;
+}
+#news{
+    height:500px;
+    position:relative;
+    top:1200px;
+    left:500px;
+}
+
+/*footer——————————————————————————————————————————————————————*/
+#footerPic{
+    width:100%;
+    height:1000px;
+    position:absolute;
+    top:3500px;
+    z-index: 9;
+    background: url("../img/backgroundFooter.png")  no-repeat fixed 100% 100%;
+
+
+}
+#footerBottom{
+    width:100%;
+    height:500px;
+    position: relative;
+    top:500px;
+    z-index: 10;
+    background-color: #24252F;
+}
+#footerBottom img{
+    position: relative;
+    left:550px;
+    top:100px;
+}
+#footerBottom header{
+    width:100px;
+    position: relative;
+    left:655px;
+    top:100px;
+    font-size: 3em;
+    color:white;
+}
+
+
+/*————————具体菜单部分————————————————*/
+
+div#select{
+    clear:both;
+}
+
+div#menu
+{
+    font-family: Times,sans-serif;
+    font-style: italic;
+    position: absolute;
+    left: 10%;
+
+}
+
+p#smallType
+{
+    font-weight:bold;
+    font-size: 1.5em;
+}
+p#name{
+    font-size:1.2em;
+}
+p#name:hover{
+    color:gray;
+}

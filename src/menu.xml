@@ -1,0 +1,246 @@
+<menu >
+    <Pizza>
+    <Pizzas id="Pizzas">
+            <food id="1">
+                <name >Tomato &amp; Cheese</name>
+                <price> 5.5</price>
+                <price> 9.75</price>
+            </food>
+            <food id="2">
+                <name >Onions</name>
+                <price size ="Sm" >    6.85 </price>
+                <price size ="Lg">   10.85  </price>
+            </food>
+            <food id="3">
+                <name >Peppers</name>
+                <price size ="Sm" >    6.85  </price>
+                <price size ="Lg">    10.85  </price>
+            </food>
+            <food id="4">
+                <name >Broccoli</name>
+                <price size ="Sm" >    6.85  </price>
+                <price size ="Lg">    10.85   </price>
+            </food>
+        </Pizzas>
+    <Specialitypizzas id="Speciality pizzas">
+            <food id="1">
+                <name>Mediterranean</name>
+                <description>
+                    Sliced Tomatoes,Olives,Spinach,FreshGarlic,
+                    Mozzarella &amp; Feta Cheese
+                </description>
+                <price size ="Sm" >   9.8   </price>
+                <price size ="Lg">     15.8 </price>
+            </food>
+            <food id="2">
+                <name> Vegetarian</name>
+                <description>
+                    Sliced Tomatoes,Onion,Peppers,Mushrooms,
+                    Broccoli,Mozzarella
+                </description>>
+                <price size ="Sm" >   9.8   </price>
+                <price size ="Lg">    15.8  </price>
+            </food>
+            <food id="3">
+                <name >Meat Lovers</name>
+                <description>
+                    Pepperoni,Hamburg,Sausage,&amp; Bacon
+                </description>
+                <price size ="Sm" >    9.8   </price>
+                <price size ="Lg">    15.8   </price>
+            </food>
+            <food id="4">
+                <name >Bbq Grilled Chicken</name>
+                <description>
+                    Choice Of Begetables
+                </description>
+                <price size ="Sm" >      9.8  </price>
+                <price size ="Lg">     15.8   </price>
+            </food>
+            <food id="5">
+                <name >Grecian Supreme</name>
+                <description>
+                    Grilled Chicken,Feta Cheese,Tomatoes,
+                    Kalamata Olives
+                </description>
+                <price size ="Sm" >     9.8   </price>
+                <price size ="Lg ">    15.8   </price>
+            </food>
+        </Specialitypizzas>
+    </Pizza>
+    <Spaghetti>
+        <Spaghettiorziti id="Spaghetti or ziti">
+            <food id="1">
+                <name>With Sauce</name>
+                <price> 5.4 </price>
+            </food>
+            <food id="2">
+                <name>With Sausage</name>
+                <price> 6.45 </price>
+            </food>
+            <food id="3">
+                <name>With Meat Ball</name>
+                <price> 6.45 </price>
+            </food>
+            <food id="4">
+                <name> A La Three Aces</name>
+                <price> 7.25 </price>
+                <description>
+                    Sausage,Mushrooms,Bacon &amp; Mozzarella
+                    Cheese
+                </description>
+            </food>
+        </Spaghettiorziti>
+        <Homemadelasagnaravioliormanicotti id="Home made Lasagna Ravioli or Manicotti">
+            <food id="1">
+                <name>With</name>
+                <price> 6.25 </price>
+            </food>
+            <food id="2">
+                <name>With Mushrooms</name>
+                <price>7.25</price>
+            </food>
+            <food id="3">
+                <name>Veggie Lasagna</name>
+                <price> 7.25</price>
+                <description>
+                    All Pasta Dinners Served with Garlic
+                    Bread and Salad
+                </description>
+            </food>
+        </Homemadelasagnaravioliormanicotti>
+    </Spaghetti>
+    <Pie>
+        <Homemadecalzones id="Homemade Calzones">
+            <food id="1">
+                <name>Homemade Calzones</name>
+                <price size="lg">7.35</price>
+            </food>
+            <food id="2">
+                <name>Sausage</name>
+                <price size="lg">7.35</price>
+            </food>
+            <food id="3">
+                <name>Ham &amp; Cheese</name>
+                <price>7.35</price>
+            </food>
+        </Homemadecalzones>
+        <Wraps4.95 id="Wraps$4.95">
+            <food id="1">
+                <name>Turkey Club Wrap</name>
+                <price>4.95</price>
+                <description>
+                    Turkey,CHeese,Lettuce,Tomato,Onion,Mayo
+                </description>
+            </food>
+            <food id="2">
+                <name>Chicken Cobb Grilled</name>
+                <price>4.95</price>
+                <description>
+                    Grilled Chicken,Bacon,Cheese,Lettuce,Tomatop,Onion,Honey Mustard
+                </description>
+            </food>
+            <food id="3">
+                <name>Greek Supreme</name>
+                <price>4.95</price>
+                <description>
+                    Feta Cheese,Black Olives,Lettuce,Tomato,Onion,Greek Dressing
+                </description>
+            </food>
+        </Wraps4.95>
+        <Grinders id="Grinders">
+
+            <food id="1">
+                <name>Meatless</name>
+                <price size="sm">4.5</price>
+                <price size="lg">4.95</price>
+            </food>
+
+            <food id="2">
+                <name>Roast Beef</name>
+                <price size="sm">4.95</price>
+                <price size="lg">5.95</price>
+            </food>
+
+            <food id="3">
+                <name>Steak Bomb</name>
+                <price size="sm">5.5</price>
+                <price size="lg">6.5</price>
+                <description>
+                    Each Additional Item on Steak Subs $0.25/$0.4
+                </description>
+            </food>
+        </Grinders>
+    </Pie>
+    <SideOrders>
+        <Sideorders id="Side Orders">
+            <food id="1">
+                <name>Onion Rings</name>
+                <price size="sm">2.6</price>
+                <price size="lg">2.95</price>
+            </food>
+            <food id="2">
+                <name>French Fries</name>
+                <price size="sm">2.25</price>
+                <price size="lg">2.65</price>
+            </food>
+            <food id="3">
+                <name>Spicy Frise</name>
+                <price size="sm">2.6</price>
+                <price size="lg">2.95</price>
+            </food>
+        </Sideorders>
+        <Salads id="Salads">
+            <food id="1">
+                <name>Garden</name>
+                <price size="sm">3.5</price>
+                <price size="lg">4.5</price>
+            </food>
+            <food id="2">
+                <name>Greek</name>
+                <price size="sm">4.5</price>
+                <price size="lg">5.5</price>
+            </food>
+            <food id="3">
+                <name>Kabob Salad</name>
+                <price size="sm">5.45</price>
+                <price size="lg">6.45</price>
+                <description>
+                    With grilled Chicken &amp; feta Cheese
+                </description>
+            </food>
+        </Salads>
+    </SideOrders>
+    <SpecialDinners>
+        <Specialdinners id="Special Dinners">
+            <food id="1">
+                <name>Chicken Wing Dinner</name>
+                <price>7.25</price>
+            </food>
+            <food id="2">
+                <name>Gyro Plate</name>
+                <price>7.25</price>
+            </food>
+            <food id="3">
+                <name>Steak Tips Dinner</name>
+                <price>8.25</price>
+                <description>
+                    Serverd with side salad &amp; french fries
+                </description>
+            </food>
+        </Specialdinners>
+    </SpecialDinners>
+</menu>
+
+
+
+
+
+
+
+
+
+
+
+
+

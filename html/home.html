@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../etc/style.css" type="text/css">
+    <title>Three Aces</title>
+</head>
+
+<body>
+<div id="content">
+<!--图片滚动栏-->
+    <div id="pic-top" align="center">
+        <ul class="pic-top">
+            <li><img class="onRest" id="img-top0" src="../img/1.png" ></li>
+            <li><img class="onRest" id="img-top1" src="../img/2.png" ></li>
+            <li><img class="onRest" id="img-top2" src="../img/3.png" ></li>
+            <li><img class="onRest" id="img-top3" src="../img/4.png" ></li>
+            <li><img class="onRest" id="img-top4" src="../img/5.png"></li>
+        </ul>
+
+    </div>
+
+<!--主页-->
+<div id="main" >
+    <!--图片滚动分页点-->
+    <ul id="nav-top" >
+        <li id="nav-top1">
+            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g id="group0" transform="translate(8, 8)">
+                    <circle id="circle0"cx="0" cy="" r="1" stroke="white" stroke-width="0" fill="white" transform="scale(6,6)"/>
+                    <circle cx="0" cy="0" r="6" stroke="white" stroke-width="2" fill-opacity="0" />
+                </g><!--circle0初始化，页面载入时状态为充满状态，但无法设置r=6，应用css时会引发先扩大再缩小的错误，所以设置transform="scale(6,6)"属性-->
+            </svg>
+        </li>
+        <li id="nav-top2">
+            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g id="group1" transform="translate(8, 8)">
+                <circle id="circle1" cx="0" cy="0" r="0" stroke="white" stroke-width="0" fill="white" />
+                <circle cx="0" cy="0" r="6" stroke="white" stroke-width="2" fill-opacity="0" />
+            </g>
+        </svg>
+        </li>
+        <li id="nav-top3">
+            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g id="group2" transform="translate(8, 8)">
+                <circle id="circle2" cx="0" cy="0" r="0" stroke="white" stroke-width="0" fill="white" />
+                <circle cx="0" cy="0" r="6" stroke="white" stroke-width="2" fill-opacity="0" />
+            </g>
+        </svg>
+        </li>
+        <li id="nav-top4">
+            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g id="group3" transform="translate(8, 8)">
+                <circle id="circle3" cx="0" cy="0" r="0" stroke="white" stroke-width="0" fill="white" />
+                <circle cx="0" cy="0" r="6" stroke="white" stroke-width="2" fill-opacity="0" />
+            </g>
+        </svg>
+        </li>
+        <li id="nav-top5">
+            <svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g id="group4" transform="translate(8, 8)">
+                <circle id="circle4" cx="0" cy="0" r="0" stroke="white" stroke-width="0" fill="white" />
+                <circle cx="0" cy="0" r="6" stroke="white" stroke-width="2" fill-opacity="0" />
+            </g>
+        </svg>
+        </li>
+    </ul>
+
+    <div class="logo">
+       <img src="../img/logo-opacity.png" width="130" height="130" >
+    </div>
+
+    <!--主页导航条-->
+
+    <ul id="nav" class="idTabs">
+        <li><a href="#main">Home </a><div id="div0"></div></li>
+        <li><a href="#menu"> Menu</a><div id="div1"></div></li>
+        <li><a href="contact.html">Contact</a><div id="div2"></div></li>
+        <li><a href="about.html">About</a><div id="div3"></div ></li>
+    </ul>
+
+    <section class="panel" id="welcome">
+
+        <header><h1>WELCOME</h1></header>
+        <p>Our aim is to give you a rich experience. To explore some of Australia's most beautiful, natural produce.</p>
+        <p> To present an original cuisine where texture, purity of<br/>
+        flavour and balance is paramount. To bring warmth and
+        knowledge to our service in one of the world's most
+        extraordinary harbour settings.</p>
+
+    </section>
+    <img id="chef" src="../img/chef.jpg" width="500" height="400">
+    <section class="panel" id="experience">
+
+        <header><h1>EXPERIENCE</h1></header>
+        <p>At Quay our aim is to provide a truly memorable dining
+            experience. An experience that celebrates the diversity of
+            our wonderful Australian ingredients cooked with
+            imagination and passion. Warm, knowledgeable,
+            professional staff will extend genuine hospitality as they
+            guide you through your dining experience.</p>
+
+    </section>
+    <section class="panel" id="functions">
+        <header><h1>FUNCTIONS</h1></header>
+        <p>   Every event hosted by Quay not only enjoys our world-class
+            cuisine, but is surrounded by the
+            iconic maritime panorama of the world’s most stunning harbour city.
+        </p>
+    </section>
+
+    <section class="panel" id="news">
+        <header><h1>LATEST NEWS</h1></header>
+        <p><span> PUBLIC HOLIDAY OPENING HOURS</span>
+    Oct. 29, 2015
+
+    Thursday 24th December: OPEN lunch and dinner
+
+    Friday 25th December: OPEN lunch
+
+    Saturday 26th December: CLOSED
+
+    Sunday 27th December: OPEN dinner
+
+    Monday 28th December: CLOSED
+
+    Tuesday 29th December: CLOSED
+
+    Wednesday 30th December: OPEN dinner
+
+    Thursday 31st December: OPEN dinner
+
+    Friday 1st January: CLOSED
+
+    Saturday 2nd January: OPEN dinner
+
+    Sunday 3rd January: OPEN dinner
+
+    Monday 4th January: Resume trading as normal
+
+
+    A 12.5% surcharge applies to all bookings made on a public holiday.
+        </p>
+    </section>
+</div>
+
+
+<div id="footerPic">
+    <div id="footerBottom">
+        <header>3</header>
+        <img src="../img/logoSymbol.png"></div>
+</div>
+</div>
+<script src="../javascript/jquery-1.11.3.min.js"></script>
+<script src="../javascript/jquery.idTabs.min.js"></script>
+<script src="../javascript/my_js.js"></script>
+<script src="../javascript/Ajax.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
