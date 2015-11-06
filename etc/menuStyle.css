@@ -1,3 +1,102 @@
+:link,:visited { text-decoration:none }
+ul,ol { list-style:none }
+h1,h2,h3,h4,h5,h6,pre,code { font-size:1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input
+{ margin:0; padding:0 }
+a img,:link img,:visited img { border:none }
+address { font-style:normal }
+
+div#ourMenu{
+   background-color: #fff;
+   border:1px solid black;
+
+}
+/*2级框________________________________________________*/
+div#menuWrapper{
+    position:relative;
+    top:200px;
+    padding-top:50px;
+    width:100%;
+    margin:0 auto;
+    border:2px solid #caeeb6;
+}
 #menuTitle{
-text-align: center;
+    width:700px;
+    height:200px;
+    margin:0 auto;
+
+    text-align: center;
+    color:#000;
+    border:1px solid black;
+}
+#menuTitle header{
+    font-size:4em;
+    margin-bottom:80px;
+}
+/*3级框用外部div居中，再规定ul宽度进行相对移动，去掉overflow________________________________________________*/
+div#infoMenu{
+    position:relative;
+    top:100px;
+    width:1200px;
+    height:900px;
+    margin:0 auto;
+    border:4px solid black;
+
+
+}
+div#infoMenu ul{
+    position:relative;
+    margin:0 auto;
+    width:935px;
+    border:5px solid #1166FF;
+}
+#infoMenu li{
+    float:left;
+    border:2px solid #ff4a6a;
+}
+#infoMenu a{
+    display:block;
+    width:183px;
+    line-height: 78px;
+    text-align: center;
+    text-decoration: none;
+    background-color:rgb(230,236,243)
+}
+#infoMenu a:hover{  background-color:rgb(208,218,230)  }
+
+div.menuWrapper{
+    background-color:rgb(40,40,40);
+    position:relative;
+    top:78px;
+    margin:0 auto;
+    width:935px;
+    border:2px solid #f9c3ff;
+    color:#fff;
+    text-align:center;
+}
+/*————————具体菜单部分————————————————*/
+
+div#select{
+    clear:both;
+}
+
+div#menu
+{
+    font-family: Times,sans-serif;
+    font-style: italic;
+    position: absolute;
+    left: 10%;
+
+}
+
+p#smallType
+{
+    font-weight:bold;
+    font-size: 1.5em;
+}
+p#name{
+    font-size:1.2em;
+}
+p#name:hover{
+    color:gray;
 }

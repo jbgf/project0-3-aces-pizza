@@ -8,13 +8,13 @@ var hoverEqli=-1;
 
 
 //xml加载函数，引用ajaxReq；
-function showMenu(type) {
+function showMenu(type,index) {
 
-    ajaxReq.send("GET", "../src/menu.xml", handleRequest(type));
+    ajaxReq.send("GET", "../src/menu.xml", handleRequest(type,index));
 }
 
 // ajaxReq回调函数；
-function handleRequest(type) {
+function handleRequest(type,index) {
     if (ajaxReq.getReadyState() == 4 && ajaxReq.getStatus() == 200) {              //第一次无反应；readystate==0；
         var xmlData = ajaxReq.getResponseXML();
         var bigType = ajaxReq.getResponseXML().getElementsByTagName(type)[0];
@@ -42,7 +42,7 @@ function handleRequest(type) {
 
                 }
                 if(food[j].getElementsByTagName("description").length!==0){                   //不存在不可用nodevalue！==0表示，没有des标签时出错
-                   des="<p>"+food[j].getElementsByTagName("description")[0].firstChild.nodeValue+"</p>";
+                   des="<p>("+food[j].getElementsByTagName("description")[0].firstChild.nodeValue+")</p>";
                     x+=des;
                }
                 x+="<br/>"
@@ -51,7 +51,7 @@ function handleRequest(type) {
             x+="<br/>"
 
         }
-        document.getElementById("menu").innerHTML = "<p>" + x + "</p>"
+        document.getElementsByClassName("menuWrapper")[index].innerHTML = "<p>" + x + "</p>"
 
 
     }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../etc/style.css" type="text/css">
+    <link rel="stylesheet" href="../etc/menuStyle.css" >
     <title>Three Aces</title>
 </head>
 
@@ -73,12 +74,13 @@
     <!--主页导航条-->
 
     <ul id="nav" class="idTabs">
-        <li><a href="#main">Home </a><div id="div0"></div></li>
-        <li><a href="#menu"> Menu</a><div id="div1"></div></li>
-        <li><a href="contact.html">Contact</a><div id="div2"></div></li>
-        <li><a href="about.html">About</a><div id="div3"></div ></li>
+        <li><a href="#home">Home </a><div id="div0"></div></li>
+        <li><a href="#ourMenu"> Menu</a><div id="div1"></div></li>
+        <li><a href="#contact">Contact</a><div id="div2"></div></li>
+        <li><a href="#about">About</a><div id="div3"></div ></li>
     </ul>
-
+    <!--home主页-->
+<div id="home">
     <section class="panel" id="welcome">
 
         <header><h1>WELCOME</h1></header>
@@ -142,6 +144,48 @@
     A 12.5% surcharge applies to all bookings made on a public holiday.
         </p>
     </section>
+</div>
+
+    <!--ourMenu主页-->
+
+<div id="ourMenu">
+        <div id="menuWrapper">
+
+            <section class="panel" id="menuTitle">
+
+                <header><h1>OUR MENU</h1></header>
+                <p> At Quay, our passion is to deliver a truly unique dining experience, one which is completely removed
+                    from the everyday. Quay’s menu is a continually evolving repertoire; some classics, some reworking
+                    of <br/>old favourites plus new dishes for each season..</p>
+
+            </section>
+
+            <div id="infoMenu">
+
+                <ul class="idTabs">
+                    <li><a href="#pizza" onclick="showMenu('Pizza',0)" >Pizzas</a></li>
+                    <li><a href="#spaghetti" onclick="showMenu('Spaghetti',1)">Spaghetti</a></li>
+                    <li><a href="#pie" onclick="showMenu('Pie',2)">Pie</a></li>
+                    <li><a href="#sideOrders" onclick="showMenu('SideOrders',3)">Side Orders</a></li>
+                    <li><a href="#specialDinners" onclick="showMenu('SpecialDinners',4)">Special Dinners</a></li>
+                </ul>
+                <div id="pizza" class="menuWrapper"></div>
+                <div id="spaghetti" class="menuWrapper"></div>
+                <div id="pie" class="menuWrapper"></div>
+                <div id="sideOrders" class="menuWrapper"></div>
+                <div id="specialDinners" class="menuWrapper"></div>
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+<div id="contact"></div>
+<div id="about"></div>
+
 </div>
 
 

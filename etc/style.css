@@ -261,29 +261,3 @@ ul#nav a{
 }
 
 
-/*！！！！！！！！醤悶暇汽何蛍！！！！！！！！！！！！！！！！*/
-
-div#select{
-    clear:both;
-}
-
-div#menu
-{
-    font-family: Times,sans-serif;
-    font-style: italic;
-    position: absolute;
-    left: 10%;
-
-}
-
-p#smallType
-{
-    font-weight:bold;
-    font-size: 1.5em;
-}
-p#name{
-    font-size:1.2em;
-}
-p#name:hover{
-    color:gray;
-}
