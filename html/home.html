@@ -199,6 +199,62 @@
 <script src="../javascript/jquery.idTabs.min.js"></script>
 <script src="../javascript/my_js.js"></script>
 <script src="../javascript/Ajax.js"></script>
+<script>
+
+    var eleMenus = $("#infoMenu a").bind("click", function(event) {
+        var query = this.href.split("#")[1];
+        if (history.pushState && query ) {
+            /*
+             ajax载入~~
+             */
+
+            // history处理
+            var title = "菜单-" + $(this).text();
+            document.title = title;
+            if (event && /\d/.test(event.button)) {
+                history.pushState({ title: title }, title, location.href.split("?")[0] + "?" + query);
+            }
+        }
+        return false;
+    });
+    var fnHashTrigger = function(target) {
+        var query = location.href.split("?")[1], eleTarget = target || null;
+        if (typeof query == "undefined") {
+            if (eleTarget = eleMenus.get(0)) {
+
+                // 如果没有查询字符，则使用第一个导航元素的查询字符内容
+                history.replaceState(null, document.title, location.href.split("#")[0] + "?" + eleTarget.href.split("#")[1]) + location.hash;
+                fnHashTrigger(eleTarget);
+            }
+        } else {
+
+            eleMenus.each(function() {     //点击返回按钮之后，pushState事件触发，eleTarget释放为空；遍历菜单和query比较；
+                if (eleTarget === null && this.href.split("#")[1] === query) {
+
+                    eleTarget = this;
+
+                }
+            });
+
+            if (!eleTarget) {
+                // 如果查询序列没有对应的导航菜单，去除查询然后执行回调
+                history.replaceState(null, document.title, location.href.split("?")[0]);
+                fnHashTrigger();
+            } else {
+
+                $(eleTarget).trigger("click");
+            }
+        }
+    };
+    if (history.pushState) {
+        window.addEventListener("popstate", function() {
+            fnHashTrigger();
+        });
+
+        // 默认载入
+        fnHashTrigger();
+    }
+</script>
 </body>
 </html>
 
